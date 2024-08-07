@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive-Image-Map</title>
+  </head>
+  <body>
+    <h1>Interactive Image Map</h1>
+    <!-- The usemap value starts with a hash tag # followed by the name of the image map, 
+     and is used to create a relationship between the image and the image map. -->
+    <img
+      src="gamingSetup.jpg"
+      alt="Picture of a PC gaming setup"
+      usemap="#workmap"
+    />
+    <!-- The name attribute must have the same value as the <img>'s usemap attribute . -->
+    <map name="workmap">
+      <!-- A clickable area is defined using an <area> element. -->
+      <!-- 'coords' is short for coordinates depending on the shape you choose. rect, circle, poly and default. -->
+      <!-- left, top, right, bottom -->
+      <area
+        shape="rect"
+        coords="140, 130, 453, 277"
+        href="https://www.newegg.com/Monitors/Category/ID-19"
+        target="_blank"
+        alt="Computer Monitor"
+        onclick="myFunction()"
+      />
+      <area
+        shape="rect"
+        coords="64, 238, 94, 325"
+        href="https://www.pcgamer.com/best-computer-speakers/"
+        target="_blank"
+        alt="Speakers"
+      />
+      <area
+        shape="rect"
+        coords="495, 185, 569, 343"
+        href="https://www.newegg.com/Gaming-Desktops/SubCategory/ID-3742"
+        target="_blank"
+        alt="Computer Tower"
+      />
+      <area 
+        shape="rect" 
+        coords="185, 334, 335, 366" 
+        href="https://www.amazon.com/keyboard/s?k=keyboard" 
+        target="_blank"
+        alt="Keyboard" />
+      <area 
+        shape="rect" 
+        coords="388, 351, 436, 384" 
+        href="https://www.amazon.com/computer-mouse/s?k=computer+mouse"
+        target="_blank"
+        alt="Mouse" />
+    </map>
+
+    <script>
+      function myFunction() {
+        alert("You clicked the monitor!");
+      }
+    </script>
+  </body>
+</html>
