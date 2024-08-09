@@ -7,8 +7,19 @@
   </head>
   <body>
     <h1>Interactive Image Map</h1>
+    <p>With HTML image maps you can make clickable areas on an image.</p>
+    <p>After you put your image in your HTML...</p>
+    <p>You then, start with the 'map' tags...Inside the 'map' tags you put the 'area' tags...The area tag is
+       where we tell the browser to look for the clickable areas.</p>
+    <p>In the area tag we specify the 'coords' or coordinates...the shape: rect, circle, poly or default...and where you want the 
+      clickable area to go w/a 'href' attribute.</p>
+    <div>
+      <p>You can find these 'coords' with a image editor like Microsoft Paint. You have to do each axis separately.</p>
+      <img src="msPaint.png" alt="Diagram of how to find coordinates" width="460">
+    </div>
     <!-- The usemap value starts with a hash tag # followed by the name of the image map, 
      and is used to create a relationship between the image and the image map. -->
+     <h2>Click on the speakers, monitor, keyboard, mouse or computer tower to see more shopping options.</h2>
     <img
       src="gamingSetup.jpg"
       alt="Picture of a PC gaming setup"
@@ -19,9 +30,10 @@
       <!-- A clickable area is defined using an <area> element. -->
       <!-- 'coords' is short for coordinates depending on the shape you choose. rect, circle, poly and default. -->
       <!-- left, top, right, bottom -->
+       <!--The first two numbers are the x-axis and the last two numbers are the y-axis -->
       <area
         shape="rect"
-        coords="140, 130, 453, 277"
+        coords="140, 130, 453, 277" 
         href="https://www.newegg.com/Monitors/Category/ID-19"
         target="_blank"
         alt="Computer Monitor"
